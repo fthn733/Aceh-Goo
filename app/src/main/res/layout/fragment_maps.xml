@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Gray"
+
+    tools:context=".MapsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="40dp"
+            android:layout_margin="30dp"
+            android:background="@color/cardview_dark_background"
+            android:elevation="20dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/LG"
+                >
+
+                <ImageView
+                    android:id="@+id/titleImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_logo"
+                    android:contentDescription="gambar"
+                    android:src="@drawable/map" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="40dp"
+            android:background="@color/cardview_dark_background"
+            android:elevation="20dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="@color/LG">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Koordinasi Lokasi Anda"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"/>
+
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="400dp"
+                android:textColorHint="@color/black"
+                android:layout_height="50dp"
+                android:layout_below="@id/Label"
+                android:hint="Titik Koordinat"
+                android:textColor="@color/black"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/editTextUsername"
+                android:layout_marginTop="22dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="Nama Lokasi"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPassword"
+                android:layout_marginTop="16dp"
+                android:text="Search" />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>
